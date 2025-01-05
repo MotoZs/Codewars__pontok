@@ -1,0 +1,95 @@
+:root {
+    --bg-color-light: #f9f9f9;
+    --text-color-light: #333;
+    --card-bg-light: #fff;
+    --bg-color-dark: #1e1e1e;
+    --text-color-dark: #f9f9f9;
+    --card-bg-dark: #2e2e2e;
+  }
+  
+  body.light-mode {
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+  }
+  
+  body.dark-mode {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+  }
+  
+  .card {
+    background-color: var(--card-bg-light);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body.dark-mode .card {
+    background-color: var(--card-bg-dark);
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: var(--card-bg-light);
+    border-bottom: 1px solid #ccc;
+  }
+  
+  body.dark-mode header {
+    background-color: var(--card-bg-dark);
+  }
+  
+  form {
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    padding: 8px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
+  #cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  #clear-data {
+    margin: 16px;
+    padding: 8px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #clear-data:hover {
+    background-color: darkred;
+  }
+  
